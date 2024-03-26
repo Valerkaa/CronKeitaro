@@ -9,5 +9,5 @@ RUN echo 'alias migrations="npm run typeorm:run-migrations"' >> /etc/profile
 ENV ENV="/etc/profile"
 
 COPY . .
-EXPOSE 3001
+EXPOSE 3030
 CMD ["npm", "start"]

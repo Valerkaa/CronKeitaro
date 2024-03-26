@@ -17,7 +17,7 @@ services:
     restart: unless-stopped
     env_file: ./.env
     networks:
-      - nestx
+      - nest
 
   nest-db:
     image: postgres:15.2-alpine3.17
@@ -32,7 +32,7 @@ services:
       - '5432:5432'
     restart: always
     networks:
-      - nestx
+      - nest
 
   nest-pgadmin:
     container_name: nest-pgadmin
@@ -49,11 +49,11 @@ services:
       - '5051:80'
     restart: always
     networks:
-      - nestx
+      - nest
     logging:
       driver: none
 
 networks:
-  nestx:
+  nest:
     external: true
 
