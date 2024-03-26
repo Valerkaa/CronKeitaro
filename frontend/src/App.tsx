@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {Routes, Route} from "react-router-dom"
 import Login from "./Pages/Login";
-import {MainPage} from "./Pages/Main";
+import MainPage from "./Pages/Main";
 function App() {
   return (
    <>
